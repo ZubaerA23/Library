@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+  }
+*{
+    margin: 0;
+}
+
+
+
+
+
+
+.middle_part{
+    background: rgb(236,236,236);
+    background: linear-gradient(37deg, rgba(236,236,236,1) 4%, rgba(76,76,97,1) 46%, rgba(20,20,24,1) 79%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--bg-secondary);
+   
+}
+
+.middle_part h1{
+    font-size: 5vw;
+    width: auto;
+    color: var(--text-primary);
+    text-shadow: 1px 1pc black;
+    
+}
+
+
+
+
+.middle_part button{
+    width: 10rem;
+    height: 3rem;
+    margin-left: 1%;
+    border: none;
+    font-weight: 600;
+    background-color: #27a6ed;
+    box-shadow: 1px 0.6pc black;
+    cursor: pointer;
+    margin-top: 10%;
+}
+
+.middle_part button:hover{
+    background-color: #1b80b8;
+    box-shadow: 0px 0px 0px;
+    height: 2.9rem;
+}
+
+ 

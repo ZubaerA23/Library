@@ -1,0 +1,39 @@
+
+
+
+
+.delete_{
+    background-color: grey;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delete p{
+    font-size: larger;
+}
+
+.delete_options{
+    margin-top: 6%;
+    display: flex;
+    flex-direction: row;
+}
+
+.delete button{
+    height: 7vw;
+    width: 15vw;
+    border-style: none;
+    box-shadow: 1px 1pc black;
+    cursor: pointer;
+    margin-left: 2%;
+}
+
+.delete button:hover{
+
+    height: 6.7vw;
+    width: 14.7vw;
+    box-shadow: 0 0 0;
+
+}

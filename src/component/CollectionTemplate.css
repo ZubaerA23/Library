@@ -1,0 +1,73 @@
+.collection_container{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    background: rgb(20,20,24);
+    background: linear-gradient(37deg, rgba(20,20,24,1) 0%, rgba(76,76,97,1) 38%, rgba(41,174,249,1) 79%);
+    height: 140vh;
+    padding-bottom: 7rem;
+  
+}
+
+
+table{
+    background: #323232;
+   
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    box-shadow: 1px 1pc 1pc black;
+}
+
+
+th,td {
+  padding: 2rem;
+  text-align: left;
+}
+
+th {
+  
+    background: hsl(0 0% 0% /0.5);
+}
+
+tr:nth-of-type(2n) {
+    background: hsl(0 0% 0% / 0.3);
+}
+
+@media (max-width: 650px) {
+    
+    th{
+        display: none;
+    }
+    td {
+        display: grid;
+        grid-template-columns: 15ch auto;
+        padding: 0.5rem 1rem;
+    }
+
+    td::before {
+        content: attr(data-cell) ": "; 
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+    td:first-child{
+        padding-top: 2rem;
+    }
+
+
+    
+}
+
+
+
+
+.delete a{
+    color: black;
+    
+    
+}
+
+.delete a:hover{
+    color: white;
+}

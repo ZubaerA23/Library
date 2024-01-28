@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+
+
+}
+
+
+.temp_adjuster{
+    display: flex;
+    justify-content: center;
+    background: rgb(20,20,24);
+    background: linear-gradient(37deg, rgba(20,20,24,1) 0%, rgba(76,76,97,1) 38%, rgba(41,174,249,1) 79%);
+    padding-top: 10%;
+    height: 100vh;
+
+
+}
+
+
+
+.Book_Container{
+    position: relative;
+    width: 390px;
+    height: 420px;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    
+
+  
+    
+   
+}
+
+.Book_Container::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg , transparent , transparent , #45f3ff , #45f3ff , #45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.Book_Container form{
+    position: absolute;
+    inset: 4px;
+    background-color: #222;
+    padding: 50px ;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+   
+   
+
+}
+
+.Book_Container form h2{
+    color: #fff;
+    font-weight: 500 ;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+
+.Book_Container form .inputBox{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+
+.Book_Container form .inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    font: 1em;
+    letter-spacing: 0.3em;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+
+.Book_Container form .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    pointer-events: none;
+    color: #8f8f8f;
+    font: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+
+
+.Book_Container form .inputBox input:valid ~ span,
+.Book_Container form .inputBox input:focus ~ span {
+    color: #fff;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+
+.Book_Container form .inputBox input:valid ~ i,
+.Book_Container form .inputBox input:focus ~ i{
+    height: 44px;
+  
+}
+
+.Book_Container button{
+    margin-top: 5%;
+    width: 10rem;
+}
+
+.Book_Container button:hover{
+    background-color: #8f8f8f;
+    cursor: pointer;
+}
+
+

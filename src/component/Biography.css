@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.container{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 13%;
+}
+
+
+.container h1{
+    margin-top: 1%;
+    font-size: 5vw;
+    color: #524948;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container p{
+    margin-top: 5%;
+    line-height: 200%;
+    width: 100%;
+}
